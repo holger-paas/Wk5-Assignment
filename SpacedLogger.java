@@ -4,11 +4,11 @@ public class SpacedLogger implements Logger {
    
    private String addSpace(String msg) {
       String[] msgCharacters = msg.split("");
-      String newMsg = "";
+      StringBuilder newMsg = new StringBuilder();
       for (String character : msgCharacters) {
-         newMsg += character + " ";         
+         newMsg.append(character + " ");         
       }
-      return newMsg;      
+      return newMsg.toString();      
    }
 
    @Override
