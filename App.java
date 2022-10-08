@@ -7,7 +7,7 @@ public class App {
       Logger asterisk = new AsteriskLogger();
       Logger spaced = new SpacedLogger();
       
-      String msg = "Hello";
+      String msg = "Welcome";
       
       //AsteriskLogger methods
       asterisk.log(msg);
